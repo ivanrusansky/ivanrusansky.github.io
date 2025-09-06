@@ -1,0 +1,112 @@
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .background {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .navbar ul {
+        gap: 10px;
+    }
+    
+    .contact-link a,
+    .navbar ul li a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    .hero-image,
+    .content-section,
+    .gallery,
+    .intro,
+    .description-section {
+        width: 100% !important;
+        padding: 0 15px;
+    }
+
+    .intro-text,
+    .description-section p,
+    .event-card p {
+        text-align: left !important;
+        padding: 10px 0;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .event-card {
+        padding: 15px 0;
+    }
+
+    .event-card h3 {
+        font-size: 1rem;
+        text-align: left !important;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .artist-info,
+    .event-date {
+        text-align: left !important;
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-image {
+        margin: 20px auto;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .gallery-item {
+        width: 100%;
+        max-width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .img-label {
+        font-size: 0.5rem;
+        text-align: left;
+        width: 100%;
+        padding: 0;
+        margin: 8px 0 0 0;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .img-frame {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .img-frame img {
+        width: 100%;
+        height: 125px;
+        object-fit: contain;
+    }
+}
