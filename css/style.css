@@ -100,7 +100,7 @@ body {
 .gallery {
     width: 700px; /* Reduced from 900px */
     margin: 0 auto;
-    padding: 40px 0 80px 0; /* Added more padding at bottom */
+    padding: 40px 0;
 }
 
 .gallery-row {
@@ -154,11 +154,16 @@ body {
 }
 
 .intro h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #222222;
-    margin-bottom: 24px;
-    letter-spacing: -0.5px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #444444;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    text-align: right;
+    padding-left: 100px;
+    padding-right: 0;
+    text-transform: uppercase;
+    text-align: start;
 }
 
 .intro-text {
@@ -374,9 +379,13 @@ p {
     }
 
     .intro h1 {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-        justify-content: justify;
+        font-size: 0.9rem;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        text-align: start;
+        padding-left: 0px;
+        padding-right: 0;
+
     }
 
     .intro-text {
