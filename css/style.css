@@ -100,7 +100,7 @@ body {
 .gallery {
     width: 700px; /* Reduced from 900px */
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 0 80px 0; /* Added more padding at bottom */
 }
 
 .gallery-row {

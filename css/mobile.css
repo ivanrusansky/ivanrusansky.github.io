@@ -11,17 +11,18 @@
 
     .navbar {
         width: 100%;
-        padding: 20px 15px;
+        padding: 20px 10px;
     }
     
     .navbar ul {
-        gap: 10px;
+        gap: 5px;
     }
     
     .contact-link a,
     .navbar ul li a {
-        font-size: 0.9rem;
-        padding: 5px 10px;
+        font-size: 0.7rem;
+        padding: 5px 6px;
+        white-space: nowrap;
     }
 
     .hero-image,
@@ -67,6 +68,7 @@
     .gallery {
         display: flex;
         justify-content: center;
+        margin-bottom: 60px; /* Added bottom margin for mobile */
     }
 
     .gallery-row {
