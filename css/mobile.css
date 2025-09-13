@@ -1,27 +1,48 @@
 /* Mobile Styles */
 @media (max-width: 480px) {
+    /* Reset básico para mobile */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         font-size: 14px;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     .background {
         width: 100%;
-        padding: 0 15px;
+        max-width: 100vw;
+        overflow-x: hidden;
+        padding: 0;
     }
 
     .navbar {
-        width: 100%;
-        padding: 20px 10px;
+        width: 95%;
+        padding: 15px 0;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0 auto;
     }
     
     .navbar ul {
-        gap: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0px;
+        margin: 0;
+    }
+
+    h1{
+        margin-left: 30px;
     }
     
     .contact-link a,
     .navbar ul li a {
+        padding: 0px 12px;
         font-size: 0.7rem;
-        padding: 5px 6px;
         white-space: nowrap;
     }
 
@@ -38,20 +59,23 @@
     .description-section p,
     .event-card p {
         text-align: left !important;
-        padding: 10px 0;
+        padding: 10px 20px;
         font-size: 0.8rem;
         line-height: 1.5;
+        margin: 0 15px;
     }
 
     .event-card {
-        padding: 15px 0;
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 10px 0;
     }
 
     .event-card h3 {
-        font-size: 1rem;
-        text-align: left !important;
-        margin-bottom: 10px;
-        line-height: 1.4;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        padding: 0;
     }
 
     .artist-info,
@@ -63,31 +87,37 @@
 
     .hero-image {
         margin: 20px auto;
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .gallery {
         display: flex;
         justify-content: center;
         margin-bottom: 60px; /* Added bottom margin for mobile */
+        width: 95%;
+        padding: 15px 0;
     }
-
+    
     .gallery-row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, auto) !important;
+        gap: 15px;
         max-width: 300px;
         margin: 0 auto;
-        justify-items: center;
     }
     
     .gallery-item {
         width: 100%;
         max-width: 140px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
     }
 
     .img-label {
@@ -110,5 +140,148 @@
         width: 100%;
         height: 125px;
         object-fit: contain;
+    }
+
+    .gallery {
+        width: 95%;
+        padding: 15px 0;
+    }
+    
+    .gallery-row-pc {
+        display: none;
+    }
+    
+    .gallery-row-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 15px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .gallery-item-mobile {
+        width: 100%;
+        max-width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-frame img {
+        width: 100%;
+        height: 125px;
+        object-fit: contain;
+    }
+
+    .img-label {
+        font-size: 0.5rem;
+        text-align: left;
+        width: 100%;
+        padding: 0;
+        margin: 8px 0 0 0;
+    }
+
+    /* Product page specific mobile styles */
+    .hero-image.product-image {
+        width: 90%;
+        max-width: 280px;
+        margin: 20px auto;
+    }
+
+    .content-section.product-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .hero-image.product-image img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .event-card {
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .event-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+    .event-card p, 
+    .artist-info, 
+    .event-date {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Eliminar espacios y márgenes innecesarios */
+    .description-section {
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 30px auto !important;
+        padding: 0 !important;
+    }
+
+    .description-section p {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+        padding: 10px 0 !important;
+        text-align: left !important;
+    }
+
+    .separator {
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 30px auto !important;
+    }
+
+    .separator {
+        width: 85%;
+        margin: 30px auto;
+        height: 1.5px;
+    }
+
+    .pc-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .hero-image-mobile {
+        width: 90%;
+        max-width: 280px;
+        margin: 20px auto;
+    }
+
+    .hero-image-mobile img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .intro {
+        width: 95%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .intro-text {
+        padding: 0 15px !important;
     }
 }
