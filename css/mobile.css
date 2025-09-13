@@ -174,13 +174,7 @@
         object-fit: contain;
     }
 
-    .img-label {
-        font-size: 0.5rem;
-        text-align: left;
-        width: 100%;
-        padding: 0;
-        margin: 8px 0 0 0;
-    }
+    
 
     /* Product page specific mobile styles */
     .hero-image.product-image {
